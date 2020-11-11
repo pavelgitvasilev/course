@@ -1,0 +1,200 @@
+body
+  height: 100vh
+  background: linear-gradient(90deg, #8159C6 0%, #6C7CFF 100%)
+  // position: relative
+  
+
+.menu
+  display: flex
+  justify-content: space-between
+  align-items: center 
+  padding-top: 20px
+  width: 1225px
+  max-width: 100%
+  margin: auto
+  &__logo
+    display: inline-block
+  &__info
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 695px
+    max-width: 100%
+  &__btn
+    background: #FFFFFF;
+    border: 1px solid #FFDE00;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 18px 25px
+    cursor: pointer
+    transition: 0.5s
+    &:hover
+      background: #FFDE00;
+      border: 1px solid #FFDE00;
+
+.info
+  &__date
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.date
+  &__title
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 8px
+  &__subtitle
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    display: flex;
+    align-items: baseline;
+    color: #C9C3F3;
+  &__num
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #FFDE00;
+
+.hero
+  display: flex
+  justify-content: space-between
+  width: 1225px
+  max-width: 100%
+  margin: auto
+  margin-top: 100px
+  &__title
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 120%;
+    color: #FFFFFF;
+    max-width: 532px
+    margin-bottom: 64px
+    &--strong
+      color: #FFDE00
+  &__block
+    display: flex
+    justify-content: space-between
+    width: 614px
+    max-width: 100%
+  &__image
+    position: absolute
+    bottom: 5%
+    right: 5%
+    z-index: 2
+
+
+.block
+  &__conditions,
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    justify-content: flex-start
+  &__interactive
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.interactive
+  &__title
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 15px
+  &__price
+    width: 62px
+    height: 62px
+    background: #FF885E
+    border-radius: 50%
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+    display: flex;
+    justify-content: center
+    align-items: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    position: relative
+    &::before
+      content: ''
+      width: 100%
+      height: 100%
+      position: absolute
+      right: -88%
+      top: 30%
+      background: url('../img/price.svg') no-repeat
+    &::after
+      content: '';
+      position: absolute;
+      width: 72px;
+      height: 72px;
+      border: 2px solid #FF885E;
+      opacity: 0.5;
+      border-radius: 50%;
+      left: -5px;
+      top: -5px;
+      animation: zoomIn 1s ease-in-out 2.5s infinite;
+  &__btn
+    margin-top: 60px
+    cursor: pointer
+    display: block
+    padding: 22px 25px
+    background: #FFDE00;
+    border: none
+    box-shadow: 0px 0px 30px rgba(255, 222, 0, 0.35), inset 0px -2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    transition: 0.2s
+    &:hover
+      background: #EACC00;
+
+
+.conditions
+  &__inform
+    display: flex
+    flex-direction: column
+    height: 100px
+    justify-content: space-between
+    max-height: 100%
+    position: relative
+    &::before
+      content: ''
+      width: 3px
+      height: 100%
+      position: absolute
+      top: 0
+      left: -5% 
+      background-color: #FF885E
+  &__inform:not(:last-child)
+    margin-bottom: 35px
+
+
+.inform
+  &__men
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    color: #C9C3F3;
+  &__description
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: #FFFFFF;
+
